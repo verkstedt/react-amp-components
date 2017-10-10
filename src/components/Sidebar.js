@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import { string, object } from 'prop-types'
 import { Helmet } from 'react-helmet'
 
+import commonPropTypes from './commonPropTypes'
+
 class Sidebar extends Component {
 
   static propTypes = {
+    ...commonPropTypes,
     id: string.isRequired,
-    layout: string.isRequired,
     side: string,
     children: object.isRequired
   }

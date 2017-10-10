@@ -2,15 +2,29 @@
   "name": "react-amp-components",
   "version": "0.0.1",
   "description": "React AMP Components",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "repository": "https://github.com/verkstedt/react-amp-components",
   "author": "Georgios Giannoutsos Barkas",
   "license": "MIT",
   "peerDependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  },
-  "dependencies": {
+    "react-dom": "^16.0.0",
     "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack -p",
+    "lint": "eslint src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@verkstedt/eslint-config-verkstedt": "^4.0.0",
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react": "^1.0.0",
+    "eslint": "^4.8.0",
+    "webpack": "^3.6.0"
   }
 }

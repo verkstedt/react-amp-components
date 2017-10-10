@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-sidebar",
+    "src": "https://cdn.ampproject.org/v0/amp-sidebar-0.1.js",
+  },
+]
+`;
+
+exports[`Sidebar matches the snapshot 1`] = `"<amp-sidebar id=\\"sid\\" layout=\\"hidden\\" side=\\"left\\"><p>sidebar contents</p></amp-sidebar>"`;

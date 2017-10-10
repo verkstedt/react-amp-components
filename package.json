@@ -15,9 +15,11 @@
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack -p",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "precommit": "yarn lint",
+    "prepublish": "NODE_ENV=production yarn build",
+    "test": "jest"
   },
-  "dependencies": {},
   "devDependencies": {
     "@verkstedt/eslint-config-verkstedt": "^4.0.0",
     "babel-core": "^6.26.0",
@@ -25,6 +27,11 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-react": "^1.0.0",
     "eslint": "^4.8.0",
+    "jest": "^21.2.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-helmet": "^5.2.0",
     "webpack": "^3.6.0"
   }
 }

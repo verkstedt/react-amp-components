@@ -10,4 +10,14 @@ Array [
 ]
 `;
 
-exports[`Sidebar matches the snapshot 1`] = `"<amp-sidebar id=\\"sid\\" layout=\\"hidden\\" side=\\"left\\"><p>sidebar contents</p></amp-sidebar>"`;
+exports[`Sidebar matches the snapshot 1`] = `
+<amp-sidebar
+  id="sid"
+  layout="hidden"
+  side="left"
+>
+  <p>
+    sidebar contents
+  </p>
+</amp-sidebar>
+`;

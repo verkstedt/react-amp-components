@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { string, boolean } from 'prop-types'
+import { string, bool } from 'prop-types'
 
-import commonPropTypes from './commonPropTypes'
+import { pick } from '../utils/misc'
+import commonPropTypes, { commonPropList } from './commonPropTypes'
 
 class Image extends Component {
 
@@ -9,7 +10,7 @@ class Image extends Component {
     ...commonPropTypes,
     src: string.isRequired,
     srcset: string,
-    noscript: boolean,
+    noscript: bool,
     alt: string
   }
 
@@ -36,20 +37,16 @@ class Image extends Component {
   }
 
   get properties() {
-    const {
-      noloading,
-      placeholder,
-      fallback, // eslint-disable-line no-unused-vars
-      ...rest
-    } = this.props
-    return {
-      noloading: noloading && '',
-      placeholder: placeholder && '',
-      ...rest
-    }
+    return pick(this.props, ...[
+      ...commonPropList,
+      'src',
+      'srcset',
+      'alt'
+    ])
   }
 
   render() {
+
     return (
       <amp-img {...{ ...this.properties } }>
         {this.fallback}

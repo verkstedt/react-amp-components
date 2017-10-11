@@ -15,7 +15,7 @@ describe('Sidebar', () => {
   })
 
   it('matches the snapshot', () => {
-    expect(sidebar).toMatchSnapshot()
+    expect(sidebar.toJSON()).toMatchSnapshot()
   })
 
   it('injects the right script tag', () => {

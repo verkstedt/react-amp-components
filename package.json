@@ -18,7 +18,8 @@
     "lint": "eslint src",
     "precommit": "yarn lint",
     "prepublish": "NODE_ENV=production yarn build",
-    "test": "jest"
+    "test": "jest",
+    "test:inspect": "node --inspect-brk node_modules/.bin/jest --runInBand --no-cache --watch"
   },
   "devDependencies": {
     "@verkstedt/eslint-config-verkstedt": "^4.0.0",
@@ -32,6 +33,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-helmet": "^5.2.0",
+    "react-test-renderer": "^16.0.0",
     "webpack": "^3.6.0"
   },
   "files": [

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image matches the snapshot 1`] = `"<amp-img src=\\"https://placekitten.com/200/300\\"></amp-img>"`;

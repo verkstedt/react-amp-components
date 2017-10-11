@@ -36,16 +36,17 @@ class Image extends Component {
   }
 
   get properties() {
-    let {
+    const {
       noloading,
       placeholder,
-      fallback, // eslint-disable-line no-unused-vars, prefer-const
-      noscript, // eslint-disable-line no-unused-vars, prefer-const
-      ...rest // eslint-disable-line prefer-const
+      fallback, // eslint-disable-line no-unused-vars
+      ...rest
     } = this.props
-    noloading = noloading && ''
-    placeholder = placeholder && ''
-    return { noloading, placeholder, ...rest }
+    return {
+      noloading: noloading && '',
+      placeholder: placeholder && '',
+      ...rest
+    }
   }
 
   render() {

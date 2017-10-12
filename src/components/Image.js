@@ -7,6 +7,8 @@ import commonPropTypes from './commonPropTypes'
 class Image extends Component {
   static propTypes = {
     ...commonPropTypes,
+    height: commonPropTypes.height.isRequired,
+    width: commonPropTypes.width.isRequired,
     src: string.isRequired,
     srcset: string,
     noscript: bool,

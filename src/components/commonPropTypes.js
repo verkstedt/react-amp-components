@@ -13,6 +13,4 @@ const commonPropTypes = {
   className: string
 }
 
-export const commonPropList = Object.keys(commonPropTypes)
-
 export default commonPropTypes

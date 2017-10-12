@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { string, bool } from 'prop-types'
 
 import { pick } from '../utils/misc'
-import commonPropTypes, { commonPropList } from './commonPropTypes'
+import commonPropTypes from './commonPropTypes'
 
 class Image extends Component {
 
@@ -38,7 +38,7 @@ class Image extends Component {
 
   get properties() {
     return pick(this.props, ...[
-      ...commonPropList,
+      ...Object.keys(commonPropTypes),
       'src',
       'srcset',
       'alt'

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-carousel",
+    "src": "https://cdn.ampproject.org/v0/amp-carousel-0.1.js",
+  },
+]
+`;
+
+exports[`Carousel matches the snapshot 1`] = `
+<amp-carousel
+  autoplay={null}
+  className={undefined}
+  delay={null}
+  fallback={undefined}
+  height="250"
+  heights={undefined}
+  layout={undefined}
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
+  sizes={undefined}
+  type="carousel"
+  width="250"
+>
+  <p>
+    Carousel contents
+  </p>
+</amp-carousel>
+`;

@@ -1,10 +1,7 @@
 import React from 'react'
-import ReactDOMServer from 'react-dom/server'
 import Sidebar from '../../components/Sidebar'
 import Helmet from '../../utils/Helmet'
-
-const render = (component, props) =>
-  ReactDOMServer.renderToStaticMarkup(component, props)
+import { render } from '../test-utils'
 
 let sidebar
 
@@ -18,12 +15,23 @@ describe('Sidebar', () => {
   })
 
   it('matches the snapshot', () => {
-    expect(sidebar).toMatchSnapshot()
+    expect(sidebar.toJSON()).toMatchSnapshot()
   })
 
   it('injects the right script tag', () => {
     Helmet.canUseDOM = false
     const staticHead = Helmet.renderStatic()
     expect(staticHead.scriptTags).toMatchSnapshot()
+  })
+
+  it('passes down the right props', () => {
+    const props = {
+      id: 'my-sidebar',
+      side: 'right'
+    }
+    const sidebar = render(
+      <Sidebar { ...props }><p>content</p></Sidebar>
+    )
+    expect(sidebar.toJSON().props).toMatchObject(props)
   })
 })

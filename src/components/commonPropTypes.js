@@ -1,13 +1,16 @@
-import { string, boolean, object } from 'prop-types'
+import { number, string, bool, object } from 'prop-types'
 
-export default {
+const commonPropTypes = {
   heights: string,
   layout: string,
   media: string,
-  noloading: boolean,
+  noloading: bool,
   on: string,
   sizes: string,
-  width: string,
-  height: string,
-  fallback: object
+  width: number,
+  height: number,
+  fallback: object,
+  className: string
 }
+
+export default commonPropTypes

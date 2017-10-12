@@ -15,8 +15,8 @@ describe('Image', () => {
       srcset: '/img/amp.jpg 1080w, /img/amp-900.jpg 900w',
       alt: 'just an alt',
       layout: 'awesome layout',
-      width: 100,
-      height: 100,
+      width: '100',
+      height: '100',
       className: 'such-a-class'
     }
     const image = renderComponent(<Image {...props} />)
@@ -29,8 +29,8 @@ describe('Image', () => {
       srcset: '/img/amp.jpg 1080w, /img/amp-900.jpg 900w',
       alt: 'just an alt',
       layout: 'awesome layout',
-      width: 100,
-      height: 100,
+      width: '100',
+      height: '100',
       className: 'such-a-class'
     }
     const invalidProps = {

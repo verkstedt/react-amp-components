@@ -1,4 +1,4 @@
-import { number, string, bool, object } from 'prop-types'
+import { string, bool, object } from 'prop-types'
 
 const commonPropTypes = {
   heights: string,
@@ -7,8 +7,8 @@ const commonPropTypes = {
   noloading: bool,
   on: string,
   sizes: string,
-  width: number,
-  height: number,
+  width: string,
+  height: string,
   fallback: object,
   className: string
 }

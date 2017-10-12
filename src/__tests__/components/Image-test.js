@@ -1,14 +1,11 @@
 import React from 'react'
 
 import Image from '../../components/Image'
-import { render, renderToStaticMarkup } from '../test-utils'
+import { renderComponent, renderToStaticMarkup } from '../test-utils'
 
 describe('Image', () => {
-
   it('matches the snapshot', () => {
-    const image = render(
-      <Image src="https://placekitten.com/200/300" />
-    )
+    const image = renderComponent(<Image src="https://placekitten.com/200/300" />)
     expect(image.toJSON()).toMatchSnapshot()
   })
 
@@ -22,9 +19,7 @@ describe('Image', () => {
       height: 100,
       className: 'such-a-class'
     }
-    const image = render(
-      <Image { ...props } />
-    )
+    const image = renderComponent(<Image {...props} />)
     expect(image.toJSON().props).toMatchObject(props)
   })
 
@@ -36,24 +31,23 @@ describe('Image', () => {
       layout: 'awesome layout',
       width: 100,
       height: 100,
-      className: 'such-a-class',
+      className: 'such-a-class'
     }
     const invalidProps = {
       randomStuff: 'aiosdo',
       otherStuff: 123
     }
     const image = renderToStaticMarkup(
-      <Image {...{ ...validProps, ...invalidProps } } />
+      <Image {...{ ...validProps, ...invalidProps }} />
     )
     expect(image).toMatchSnapshot(validProps)
 
-    for (const prop in validProps) {
-      expect(image).toMatch(new RegExp(`${validProps[prop]}`))
-    }
-
-    for (const prop in invalidProps) {
-      expect(image).not.toMatch(new RegExp(`${invalidProps[prop]}`))
-    }
+    Object.values(validProps).forEach(prop =>
+      expect(image).toMatch(new RegExp(`${prop}`))
+    )
+    Object.values(invalidProps).forEach(prop =>
+      expect(image).not.toMatch(new RegExp(`${prop}`))
+    )
   })
 })
 

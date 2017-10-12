@@ -1,17 +1,24 @@
 import React, { Component } from 'react'
-import { string, object } from 'prop-types'
+import { string, oneOfType, arrayOf, node } from 'prop-types'
 import { Helmet } from 'react-helmet'
 
-import { pick } from '../utils/misc'
+import pick from '../utils/pick'
 import commonPropTypes from './commonPropTypes'
 
 class Sidebar extends Component {
-
   static propTypes = {
     ...commonPropTypes,
     id: string.isRequired,
     side: string,
-    children: object.isRequired
+    children: oneOfType([
+      arrayOf(node),
+      node
+    ])
+  }
+
+  static defaultProps = {
+    side: '',
+    children: []
   }
 
   get properties() {

@@ -9,7 +9,7 @@ That means that you can just import and use the AMP component you need, without 
 
 ### Warning
 
-This project is still in its early infancy. Only one component exists, but we will start populating it with more. Feel free to contribute.
+This project is still in its early infancy. Only a few components exist, but we will add more. Feel free to contribute :rocket:
 
 ## Installation
 
@@ -29,7 +29,10 @@ Import and use the AMP component you would like to use:
 
 ```javascript static
 // MyComponent.js
-import { Layout, Sidebar } from 'react-amp-components'
+import { 
+  Layout, // Renders the boilerplate & delegates the passed children to Helmet
+  Sidebar
+} from 'react-amp-components'
 
 class MyComponent extends React.Component {
   render() {

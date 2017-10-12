@@ -4,7 +4,7 @@ exports[`[object Object] 1`] = `"<amp-img layout=\\"awesome layout\\" width=\\"1
 
 exports[`Image matches the snapshot 1`] = `
 <amp-img
-  alt={undefined}
+  alt=""
   className={undefined}
   fallback={undefined}
   height={undefined}
@@ -15,7 +15,7 @@ exports[`Image matches the snapshot 1`] = `
   on={undefined}
   sizes={undefined}
   src="https://placekitten.com/200/300"
-  srcset={undefined}
+  srcset={null}
   width={undefined}
 />
 `;

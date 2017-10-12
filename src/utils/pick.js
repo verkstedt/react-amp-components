@@ -1,2 +1,2 @@
-export const pick = (object, ...props) =>
+export default (object, ...props) =>
   Object.assign({}, ...props.map(prop => ({ [prop]: object[prop] })))

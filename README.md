@@ -88,7 +88,13 @@ const finalHTML = `
 `
 ```
 
+## AMP Components implemented
+
+- [amp-sidebar](https://ampbyexample.com/components/amp-sidebar/)
+- [amp-img](https://ampbyexample.com/components/amp-img/)
+- [amp-carousel](https://ampbyexample.com/components/amp-carousel/)
+
+
 ## Todo
 - [ ] Rename `Layout` to `Helmet`
 - [ ] Provide helper `finalHTML` renderer
-- [ ] Document which components are implemented

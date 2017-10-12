@@ -12,9 +12,18 @@ Array [
 
 exports[`Sidebar matches the snapshot 1`] = `
 <amp-sidebar
+  className={undefined}
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
   id="sid"
   layout="hidden"
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
   side="left"
+  sizes={undefined}
+  width={undefined}
 >
   <p>
     sidebar contents

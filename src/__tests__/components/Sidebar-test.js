@@ -23,4 +23,15 @@ describe('Sidebar', () => {
     const staticHead = Helmet.renderStatic()
     expect(staticHead.scriptTags).toMatchSnapshot()
   })
+
+  it('passes down the right props', () => {
+    const props = {
+      id: 'my-sidebar',
+      side: 'right'
+    }
+    const sidebar = render(
+      <Sidebar { ...props }><p>content</p></Sidebar>
+    )
+    expect(sidebar.toJSON().props).toMatchObject(props)
+  })
 })

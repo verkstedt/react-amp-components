@@ -14,7 +14,7 @@ describe('Image', () => {
       src: 'https://placekitten.com/200/300',
       srcset: '/img/amp.jpg 1080w, /img/amp-900.jpg 900w',
       alt: 'just an alt',
-      layout: 'awesome layout',
+      layout: 'responsive',
       width: '100',
       height: '100',
       className: 'such-a-class'
@@ -28,7 +28,7 @@ describe('Image', () => {
       src: 'https://placekitten.com/200/300',
       srcset: '/img/amp.jpg 1080w, /img/amp-900.jpg 900w',
       alt: 'just an alt',
-      layout: 'awesome layout',
+      layout: 'responsive',
       width: '100',
       height: '100',
       className: 'such-a-class'

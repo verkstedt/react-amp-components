@@ -17,7 +17,7 @@ describe('Image', () => {
       layout: 'responsive',
       width: '100',
       height: '100',
-      className: 'such-a-class'
+      class: 'such-a-class'
     }
     const image = renderComponent(<Image {...props} />)
     expect(image.toJSON().props).toMatchObject(props)
@@ -31,7 +31,7 @@ describe('Image', () => {
       layout: 'responsive',
       width: '100',
       height: '100',
-      className: 'such-a-class'
+      class: 'such-a-class'
     }
     const invalidProps = {
       randomStuff: 'aiosdo',

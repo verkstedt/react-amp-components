@@ -18,7 +18,7 @@ const commonPropTypes = {
   width: string,
   height: string,
   fallback: object,
-  className: string
+  class: string
 }
 
 export default commonPropTypes

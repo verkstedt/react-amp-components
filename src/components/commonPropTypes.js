@@ -6,7 +6,6 @@ const commonPropTypes = {
     'nodisplay',
     'fixed',
     'responsive',
-    'fixed-width',
     'fixed-height',
     'fill',
     'container',

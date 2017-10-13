@@ -12,7 +12,7 @@ Array [
 
 exports[`Sidebar matches the snapshot 1`] = `
 <amp-sidebar
-  className={undefined}
+  class={undefined}
   fallback={undefined}
   height={undefined}
   heights={undefined}

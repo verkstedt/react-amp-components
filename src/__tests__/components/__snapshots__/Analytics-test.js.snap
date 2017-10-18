@@ -17,11 +17,11 @@ exports[`Analytics matches the snapshot 1`] = `
   >
     
           {
-            "requests": {"pageview":"https://example.com"}
-            "vars": {}
-            "extraUrlParams": {}
-            "triggers": {}
-            "transport": {}
+            "requests": {"base":"https://example.com/analytics?a=\${account}&u=\${canonicalUrl}&t=\${title}","pageview":"\${base}&type=pageview","event":"\${base}&type=event&eventId=\${eventId}"}
+            "vars": {"account":"ABC123","countryCode":"tr","tags":["Swift,Jonathan","Gulliver's Travels"]}
+            "extraUrlParams": {"a":"1","b":"2","c":"3"}
+            "triggers": {"sampledOnRandom":{"on":"visible","request":"request","sampleSpec":{"sampleOn":"\${random}","threshold":50}},"sampledOnClientId":{"on":"visible","request":"request","sampleSpec":{"sampleOn":"\${clientId(cookieName)}","threshold":1}}}
+            "transport": {"beacon":false,"xhrpost":false,"image":true}
           }
         
   </script>

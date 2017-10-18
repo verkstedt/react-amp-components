@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Analytics injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-analytics",
+    "src": "https://cdn.ampproject.org/v0/amp-analytics-0.1.js",
+  },
+]
+`;
+
+exports[`Analytics matches the snapshot 1`] = `
+<amp-analytics>
+  <script
+    type="application/json"
+  >
+    
+          {
+            "requests": {"pageview":"https://example.com"}
+            "vars": {}
+            "extraUrlParams": {}
+            "triggers": {}
+            "transport": {}
+          }
+        
+  </script>
+</amp-analytics>
+`;

@@ -1,7 +1,7 @@
 # react-amp-components
 [![npm version](https://badge.fury.io/js/react-amp-components.svg)](https://badge.fury.io/js/react-amp-components)
 
-A (hopefully) simple way to render AMP components via React on the server. 
+A (hopefully) simple way to render AMP components via React on the server.
 
 It uses [react-helmet](https://github.com/nfl/react-helmet) for managing all the required meta and script tags.
 
@@ -29,7 +29,7 @@ Import and use the AMP component you would like to use:
 
 ```javascript static
 // MyComponent.js
-import { 
+import {
   Layout, // Renders the boilerplate & delegates the passed children to Helmet
   Sidebar
 } from 'react-amp-components'
@@ -93,9 +93,10 @@ const finalHTML = `
 
 ## AMP Components implemented
 
-- [amp-sidebar](https://ampbyexample.com/components/amp-sidebar/)
-- [amp-img](https://ampbyexample.com/components/amp-img/)
-- [amp-carousel](https://ampbyexample.com/components/amp-carousel/)
+- [amp-sidebar](https://www.ampproject.org/docs/reference/components/amp-sidebar)
+- [amp-img](https://www.ampproject.org/docs/reference/components/amp-img)
+- [amp-carousel](https://www.ampproject.org/docs/reference/components/amp-carousel)
+- [amp-analytics](https://www.ampproject.org/docs/reference/components/amp-analytics)
 
 
 ## Todo

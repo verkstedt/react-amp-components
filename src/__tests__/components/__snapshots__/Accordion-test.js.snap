@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-accordion",
+    "src": "https://cdn.ampproject.org/v0/amp-accordion-0.1.js",
+  },
+]
+`;
+
+exports[`Accordion matches the snapshot 1`] = `
+<amp-accordion
+  class={undefined}
+  disableSessionStates={null}
+  expanded={null}
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
+  layout={undefined}
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
+  sizes={undefined}
+  width={undefined}
+>
+  <section>
+    <h2>
+      Section 1
+    </h2>
+    <p>
+      Content in section 1.
+    </p>
+  </section>
+  <section
+    expanded=""
+  >
+    <h2>
+      Section 2
+    </h2>
+    <div>
+      Content in section 2.
+    </div>
+  </section>
+</amp-accordion>
+`;

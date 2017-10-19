@@ -97,8 +97,10 @@ const finalHTML = `
 - [amp-img](https://www.ampproject.org/docs/reference/components/amp-img)
 - [amp-carousel](https://www.ampproject.org/docs/reference/components/amp-carousel)
 - [amp-analytics](https://www.ampproject.org/docs/reference/components/amp-analytics)
+- [amp-accordion](https://www.ampproject.org/docs/reference/components/amp-accordion)
 
 
 ## Todo
+- [ ] Define all the AMP components with their properties and scripts in a JSON file and use that to generate them.
 - [ ] Rename `Layout` to `Helmet`
 - [ ] Provide helper `finalHTML` renderer

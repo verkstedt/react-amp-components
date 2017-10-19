@@ -17,7 +17,7 @@ class Sidebar extends Component {
   }
 
   static defaultProps = {
-    side: '',
+    side: null,
     children: []
   }
 

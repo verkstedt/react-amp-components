@@ -34,8 +34,8 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^21.2.1",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "16.1.0-beta",
+    "react-dom": "16.1.0-beta",
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.0.0",
     "webpack": "^3.6.0"

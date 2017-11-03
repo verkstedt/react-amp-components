@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-form",
+    "src": "https://cdn.ampproject.org/v0/amp-form-0.1.js",
+  },
+]
+`;
+
+exports[`Form matches the snapshot 1`] = `
+<form
+  action="https://example.com"
+  action-xhr={null}
+  class={undefined}
+  custom-validation-reporting={null}
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
+  layout={undefined}
+  media={undefined}
+  method="GET"
+  noloading={undefined}
+  on={null}
+  sizes={undefined}
+  target={null}
+  width={undefined}
+>
+  <input
+    name="query"
+    placeholder="search"
+  />
+  <input
+    type="submit"
+    value="Search"
+  />
+</form>
+`;

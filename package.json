@@ -1,6 +1,6 @@
 {
   "name": "react-amp-components",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "React AMP Components",
   "main": "./dist/index.js",
   "repository": "https://github.com/verkstedt/react-amp-components",

@@ -25,6 +25,12 @@ const Layout = ({ children }) => (
   </Helmet>
 )
 
-Layout.propTypes = { children: PropTypes.arrayOf(PropTypes.node).isRequired }
+Layout.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+}
+
+Layout.defaultProps = {
+  children: []
+}
 
 export default Layout

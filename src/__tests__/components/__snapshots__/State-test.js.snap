@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`State injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": true,
+    "custom-element": "amp-bind",
+    "src": "https://cdn.ampproject.org/v0/amp-bind-0.1.js",
+  },
+]
+`;
+
+exports[`State works 1`] = `
+<amp-state
+  id="animals"
+>
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "{\\"lion\\":\\"mammal\\"}",
+      }
+    }
+    type="application/json"
+  />
+</amp-state>
+`;

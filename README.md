@@ -107,11 +107,7 @@ const finalHTML = `
 
 #### [amp-accordion](https://www.ampproject.org/docs/reference/components/amp-accordion)
 
-#### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind)
-
 #### [amp-install-serviceworker](https://www.ampproject.org/docs/reference/components/amp-install-serviceworker)
-
-#### [amp-ad](https://www.ampproject.org/docs/reference/components/amp-ad)
 
 Example usage:
 
@@ -128,6 +124,10 @@ Props:
 - dataIframeSrc (optional)
 - dataNoServiceWorkerFallbackUrlMatch (optional)
 - dataNoServiceWorkerFallbackShellUrl (optional)
+
+#### [amp-ad](https://www.ampproject.org/docs/reference/components/amp-ad)
+
+#### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind) (and amp-state)
 
 ## Todo
 

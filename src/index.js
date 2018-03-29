@@ -8,4 +8,6 @@ export { default as Ad } from './components/Ad'
 export { default as Form } from './components/Form'
 export { default as Bind } from './components/Bind'
 export { default as InstallServiceworker } from './components/InstallServiceworker'
+export { default as State } from './components/State'
+
 export { default as Helmet } from './utils/Helmet'

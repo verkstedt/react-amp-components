@@ -107,6 +107,8 @@ const finalHTML = `
 
 #### [amp-accordion](https://www.ampproject.org/docs/reference/components/amp-accordion)
 
+#### [amp-ad](https://www.ampproject.org/docs/reference/components/amp-ad)
+
 #### [amp-install-serviceworker](https://www.ampproject.org/docs/reference/components/amp-install-serviceworker)
 
 Example usage:
@@ -125,9 +127,23 @@ Props:
 - dataNoServiceWorkerFallbackUrlMatch (optional)
 - dataNoServiceWorkerFallbackShellUrl (optional)
 
-#### [amp-ad](https://www.ampproject.org/docs/reference/components/amp-ad)
-
-#### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind) (and amp-state)
+### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind)
+Example usage:
+```jsx
+<Bind text="'Hello ' + foo" className="bar">
+  <p>I will get the [text] and [class] attributes</p>
+</Bind>
+```
+### [amp-state](https://www.ampproject.org/docs/reference/components/amp-bind)
+Example usage:
+```jsx
+<State id="animals">
+  {{
+    dog: 10,
+    cat: 90
+  }}
+</State>
+```
 
 ## Todo
 

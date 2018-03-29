@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bind injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": true,
+    "custom-element": "amp-bind",
+    "src": "https://cdn.ampproject.org/v0/amp-bind-0.1.js",
+  },
+]
+`;
+
+exports[`Bind works 1`] = `
+<div
+  [text]="'bind ' + foo"
+>
+  test
+</div>
+`;
+
+exports[`Bind works with child with children 1`] = `
+<div
+  [class]="'bind ' + foo"
+  className="class"
+  id="id"
+>
+  <p>
+    One
+  </p>
+  <p>
+    Another
+  </p>
+</div>
+`;
+
+exports[`Bind works with multiple children 1`] = `
+Array [
+  <div
+    [text]="'bind ' + foo"
+  >
+    test
+  </div>,
+  <p
+    [text]="'bind ' + foo"
+  >
+    another test
+  </p>,
+]
+`;
+
+exports[`Bind works with props with brackets 1`] = `
+<p
+  [text]="foo"
+>
+  test
+</p>
+`;

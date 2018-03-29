@@ -113,7 +113,23 @@ Props:
 - dataNoServiceWorkerFallbackUrlMatch (optional)
 - dataNoServiceWorkerFallbackShellUrl (optional)
 
-#### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind) (and amp-state)
+### [amp-bind](https://www.ampproject.org/docs/reference/components/amp-bind)
+Example usage:
+```jsx
+<Bind text="'Hello ' + foo" className="bar">
+  <p>I will get the [text] and [class] attributes</p>
+</Bind>
+```
+### [amp-state](https://www.ampproject.org/docs/reference/components/amp-bind)
+Example usage:
+```jsx
+<State id="animals">
+  {{
+    dog: 10,
+    cat: 90
+  }}
+</State>
+```
 
 ## Todo
 - [ ] Define all the AMP components with their properties and scripts in a JSON file and use that to generate them.

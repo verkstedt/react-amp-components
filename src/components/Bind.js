@@ -25,7 +25,7 @@ class Bind extends Component {
     return (
       <Fragment>
         <Helmet key="helmet">
-          <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" />
+          <script async="" custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" />
         </Helmet>
         {React.Children.map(children, child => (
           <child.type {...{ ...child.props, ...bindAttributes }} >

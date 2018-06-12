@@ -12,18 +12,8 @@ Array [
 
 exports[`Accordion matches the snapshot 1`] = `
 <amp-accordion
-  class={undefined}
   disableSessionStates={null}
   expanded={null}
-  fallback={undefined}
-  height={undefined}
-  heights={undefined}
-  layout={undefined}
-  media={undefined}
-  noloading={undefined}
-  on={undefined}
-  sizes={undefined}
-  width={undefined}
 >
   <section>
     <h2>

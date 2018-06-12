@@ -14,19 +14,10 @@ exports[`Form matches the snapshot 1`] = `
 <form
   action="https://example.com"
   action-xhr={null}
-  class={undefined}
   custom-validation-reporting={null}
-  fallback={undefined}
-  height={undefined}
-  heights={undefined}
-  layout={undefined}
-  media={undefined}
   method="GET"
-  noloading={undefined}
   on={null}
-  sizes={undefined}
   target={null}
-  width={undefined}
 >
   <input
     name="query"

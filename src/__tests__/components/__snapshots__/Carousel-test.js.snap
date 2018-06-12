@@ -13,16 +13,8 @@ Array [
 exports[`Carousel matches the snapshot 1`] = `
 <amp-carousel
   autoplay={null}
-  class={undefined}
   delay={null}
-  fallback={undefined}
   height="250"
-  heights={undefined}
-  layout={undefined}
-  media={undefined}
-  noloading={undefined}
-  on={undefined}
-  sizes={undefined}
   type="carousel"
   width="250"
 >

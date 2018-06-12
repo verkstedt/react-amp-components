@@ -9,7 +9,8 @@ const commonPropTypes = {
     'fixed-height',
     'fill',
     'container',
-    'flex-item'
+    'flex-item',
+    'intrinsic'
   ]),
   media: string,
   noloading: bool,

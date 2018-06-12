@@ -1,5 +1,5 @@
 # react-amp-components
-[![npm version](https://badge.fury.io/js/react-amp-components.svg)](https://badge.fury.io/js/react-amp-components)
+[![npm version](https://badge.fury.io/js/react-amp-components.svg)](https://badge.fury.io/js/react-amp-components) [![Greenkeeper badge](https://badges.greenkeeper.io/verkstedt/react-amp-components.svg)](https://greenkeeper.io/)
 
 A (hopefully) simple way to render AMP components via React on the server.
 

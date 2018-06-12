@@ -7,10 +7,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'commonjs',
-    filename: 'index.js',
+    filename: 'index.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         include: [path.resolve(__dirname, 'src')],
         test: /\.js$/,
@@ -26,7 +26,7 @@ module.exports = {
   },
   externals: {
     'prop-types': 'prop-types',
-    'react': 'react',
+    react: 'react',
     'react-dom': 'react-dom',
     'react-helmet': 'react-helmet'
   },

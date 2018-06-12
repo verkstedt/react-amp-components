@@ -37,16 +37,13 @@ describe('Image', () => {
       randomStuff: 'aiosdo',
       otherStuff: 123
     }
-    const image = renderToStaticMarkup(
+    const image = renderComponent(
       <Image {...{ ...validProps, ...invalidProps }} />
     )
-    expect(image).toMatchSnapshot(validProps)
+    expect(image.toJSON().props).toMatchObject(validProps)
 
-    Object.values(validProps).forEach(prop =>
-      expect(image).toMatch(new RegExp(`${prop}`))
-    )
-    Object.values(invalidProps).forEach(prop =>
-      expect(image).not.toMatch(new RegExp(`${prop}`))
+    Object.keys(invalidProps).forEach(prop =>
+      expect(image.toJSON().props).not.toHaveProperty(prop)
     )
   })
 })

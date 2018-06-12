@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstallServiceworker injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": true,
+    "custom-element": "amp-install-serviceworker",
+    "src": "https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js",
+  },
+]
+`;
+
+exports[`InstallServiceworker matches the snapshot 1`] = `
+<amp-install-serviceworker
+  class={undefined}
+  data-iframe-src="dataIframeSrc"
+  data-no-service-worker-fallback-shell-url={undefined}
+  data-no-service-worker-fallback-url-match="test"
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
+  layout="nodisplay"
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
+  sizes={undefined}
+  src="src"
+  width={undefined}
+/>
+`;
+
+exports[`InstallServiceworker matches the snapshot with no optional props set 1`] = `
+<amp-install-serviceworker
+  class={undefined}
+  data-iframe-src={undefined}
+  data-no-service-worker-fallback-shell-url={undefined}
+  data-no-service-worker-fallback-url-match={undefined}
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
+  layout="nodisplay"
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
+  sizes={undefined}
+  src="src"
+  width={undefined}
+/>
+`;
+
+exports[`InstallServiceworker should correctly set layout prop 1`] = `
+<amp-install-serviceworker
+  class={undefined}
+  data-iframe-src={undefined}
+  data-no-service-worker-fallback-shell-url={undefined}
+  data-no-service-worker-fallback-url-match={undefined}
+  fallback={undefined}
+  height={undefined}
+  heights={undefined}
+  layout="nodisplay"
+  media={undefined}
+  noloading={undefined}
+  on={undefined}
+  sizes={undefined}
+  src="src"
+  width={undefined}
+/>
+`;

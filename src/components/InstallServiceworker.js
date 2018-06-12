@@ -21,13 +21,12 @@ class InstallServiceWorker extends Component {
   }
 
   get properties() {
-    return mapKeys(pick(this.props, ...[
-      ...Object.keys(commonPropTypes),
+    return mapKeys(pick(this.props,
       'src',
       'dataIframeSrc',
       'dataNoServiceWorkerFallbackUrlMatch',
       'dataNoServiceWorkerFallbackShellUrl'
-    ]))
+    ))
   }
 
   render() {

@@ -48,8 +48,5 @@
     "testMatch": [
       "**/__tests__/**/*test.js?(x)"
     ]
-  },
-  "dependencies": {
-    "map-obj": "^2.0.0"
   }
 }

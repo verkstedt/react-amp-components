@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstallServiceworker injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": true,
+    "custom-element": "amp-install-serviceworker",
+    "src": "https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js",
+  },
+]
+`;
+
+exports[`InstallServiceworker matches the snapshot 1`] = `
+<amp-install-serviceworker
+  data-iframe-src="dataIframeSrc"
+  data-no-service-worker-fallback-url-match="test"
+  layout="nodisplay"
+  src="src"
+/>
+`;
+
+exports[`InstallServiceworker matches the snapshot with no optional props set 1`] = `
+<amp-install-serviceworker
+  layout="nodisplay"
+  src="src"
+/>
+`;
+
+exports[`InstallServiceworker should correctly set layout prop 1`] = `
+<amp-install-serviceworker
+  layout="nodisplay"
+  src="src"
+/>
+`;

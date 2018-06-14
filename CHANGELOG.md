@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/verkstedt/react-amp-components/compare/v0.7.0...v0.7.1) (2018-06-14)
+
+
+### Bug Fixes
+
+* **bug:** export new InstallServiceworker component ([dd035d1](https://github.com/verkstedt/react-amp-components/commit/dd035d1))
+
 # [0.7.0](https://github.com/verkstedt/react-amp-components/compare/v0.6.0...v0.7.0) (2018-06-14)
 
 

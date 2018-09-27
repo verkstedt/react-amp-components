@@ -25,7 +25,7 @@
     "babel-core": "^6.26.0",
     "babel-env": "^2.4.1",
     "babel-eslint": "^8.0.1",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^8.0.4",
     "babel-plugin-react": "^1.0.0",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",

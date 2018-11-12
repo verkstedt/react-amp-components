@@ -1,16 +1,16 @@
-import { oneOf, string, bool, object } from 'prop-types'
+import { oneOf, string, bool, object } from "prop-types";
 
 const commonPropTypes = {
   heights: string,
   layout: oneOf([
-    'nodisplay',
-    'fixed',
-    'responsive',
-    'fixed-height',
-    'fill',
-    'container',
-    'flex-item',
-    'intrinsic'
+    "nodisplay",
+    "fixed",
+    "responsive",
+    "fixed-height",
+    "fill",
+    "container",
+    "flex-item",
+    "intrinsic"
   ]),
   media: string,
   noloading: bool,
@@ -19,7 +19,9 @@ const commonPropTypes = {
   width: string,
   height: string,
   fallback: object,
-  class: string
-}
+  class: string,
+  type: string,
+  "data-slot": string
+};
 
-export default commonPropTypes
+export default commonPropTypes;

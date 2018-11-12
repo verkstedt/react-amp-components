@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bind injects the right script tag 1`] = `
+Array [
+  Object {
+    "async": "",
+    "custom-element": "amp-ad",
+    "src": "https://cdn.ampproject.org/v0/amp-ad-0.1.js",
+  },
+]
+`;
+
+exports[`Bind works 1`] = `
+<amp-ad
+  data-slot="xxxx"
+  height="160"
+  type="doubleclick"
+  width="1150"
+/>
+`;

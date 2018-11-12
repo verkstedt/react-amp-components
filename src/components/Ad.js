@@ -18,7 +18,7 @@ class Ad extends Component {
   };
 
   get properties() {
-    return pick(this.props, ...[...Object.keys(commonPropTypes)]);
+    return pick(this.props, ...Object.keys(commonPropTypes));
   }
 
   render() {

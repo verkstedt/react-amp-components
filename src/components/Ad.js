@@ -9,7 +9,7 @@ class Ad extends Component {
   static propTypes = {
     ...commonPropTypes,
     type: string,
-    "data-slot": string.isRequired,
+    'data-slot': string.isRequired,
     children: oneOfType([arrayOf(node), node])
   };
 

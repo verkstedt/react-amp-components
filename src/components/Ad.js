@@ -31,7 +31,7 @@ class Ad extends Component {
           src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
         />
       </Helmet>,
-      <amp-ad { ...this.properties }>{children}</amp-ad>
+      <amp-ad {...{ ...this.properties }}>{children}</amp-ad>
     ];
   }
 }

@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { string, oneOfType, arrayOf, node } from "prop-types";
-import { Helmet } from "react-helmet";
+import React, { Component } from 'react'
+import { string, oneOfType, arrayOf, node } from 'prop-types'
+import { Helmet } from 'react-helmet'
 
-import pick from "../utils/pick";
-import commonPropTypes from "./commonPropTypes";
+import pick from '../utils/pick'
+import commonPropTypes from './commonPropTypes'
 
 class Ad extends Component {
   static propTypes = {
     ...commonPropTypes,
-    type: string,
+    type: string.isRequired,
     'data-slot': string.isRequired,
     children: oneOfType([arrayOf(node), node])
   };
@@ -18,11 +18,11 @@ class Ad extends Component {
   };
 
   get properties() {
-    return pick(this.props, ...Object.keys(commonPropTypes));
+    return pick(this.props, ...Object.keys(commonPropTypes))
   }
 
   render() {
-    const { children } = this.props;
+    const { children } = this.props
     return [
       <Helmet key="helmet">
         <script
@@ -32,8 +32,8 @@ class Ad extends Component {
         />
       </Helmet>,
       <amp-ad {...{ ...this.properties }}>{children}</amp-ad>
-    ];
+    ]
   }
 }
 
-export default Ad;
+export default Ad

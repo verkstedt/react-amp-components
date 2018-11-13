@@ -7,6 +7,7 @@ const AmpDecorator = (storyFn) => {
   // By reloading the location if AMP is defined,
   // we make HMR and storybook UI navigation work.
   // I think.
+  // eslint-disable-next-line
   if (self.AMP) location.reload()
 
   return (

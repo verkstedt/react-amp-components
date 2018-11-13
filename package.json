@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^23.1.0",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "react": "16.6.1",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.2.0",

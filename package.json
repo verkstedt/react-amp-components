@@ -19,9 +19,17 @@
     "precommit": "yarn lint",
     "prepublish": "NODE_ENV=production yarn build",
     "test": "jest",
-    "test:inspect": "node --inspect-brk node_modules/.bin/jest --runInBand --no-cache --watch"
+    "test:inspect": "node --inspect-brk node_modules/.bin/jest --runInBand --no-cache --watch",
+    "storybook": "start-storybook -p 6006 -s ./static -c .storybook",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0",
+    "@storybook/addon-actions": "^4.0.6",
+    "@storybook/addon-links": "^4.0.6",
+    "@storybook/addons": "^4.0.6",
+    "@storybook/react": "^4.0.6",
     "babel-core": "^6.26.0",
     "babel-env": "^2.4.1",
     "babel-eslint": "^8.0.1",
@@ -39,8 +47,6 @@
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.2.0",
     "semantic-release": "^15.5.2",
-    "@semantic-release/changelog": "^2.0.2",
-    "@semantic-release/git": "^5.0.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.4"
   },
@@ -51,5 +57,6 @@
     "testMatch": [
       "**/__tests__/**/*test.js?(x)"
     ]
-  }
+  },
+  "dependencies": {}
 }

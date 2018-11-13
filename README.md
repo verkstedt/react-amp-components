@@ -124,8 +124,11 @@ The issue is that once the AMP lib is registered in the storybook iFrame, every 
 story change produces duplicate registered elements js errors. A HMR fix could be setting
 the webpack client to `reload=true`.
 
+For now this is fixed by calling `location.reload()` when the AMP library was loaded before.
+The result is a freshly loaded AMP library with empty registry.
+
 ## Todo
 - [ ] Define all the AMP components with their properties and scripts in a JSON file and use that to generate them.
 - [ ] Rename `Layout` to `Helmet`
 - [ ] Provide helper `finalHTML` renderer
-- [ ] Fix HMR and story changing for storybook
+- [ ] Fix HMR and story changing for storybook without hack some day

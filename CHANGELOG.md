@@ -1,5 +1,5 @@
 ## [0.7.1](https://github.com/verkstedt/react-amp-components/compare/v0.7.0...v0.7.1) (2018-06-14)
-<!-- using sematic-release -->
+<!-- using sematic-release now should publish -->
 
 ### Bug Fixes
 

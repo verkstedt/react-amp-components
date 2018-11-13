@@ -114,7 +114,18 @@ Props:
 - dataNoServiceWorkerFallbackUrlMatch (optional)
 - dataNoServiceWorkerFallbackShellUrl (optional)
 
+## Storybook
+Use `yarn run storybook` to develop the components in stories.
+Currently they reside in the `stories` directory.
+
+This is a 'work in progress' implementation, as it has issues with HMR and changing stories.
+
+The issue is that once the AMP lib is registered in the storybook iFrame, every HMR and
+story change produces duplicate registered elements js errors. A HMR fix could be setting
+the webpack client to `reload=true`.
+
 ## Todo
 - [ ] Define all the AMP components with their properties and scripts in a JSON file and use that to generate them.
 - [ ] Rename `Layout` to `Helmet`
 - [ ] Provide helper `finalHTML` renderer
+- [ ] Fix HMR and story changing for storybook

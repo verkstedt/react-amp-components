@@ -5,7 +5,9 @@
       "jest": true
     },
     "globals": {
-      "document": true
+      "document": true,
+      "self": true,
+      "location": true
     },
     "rules": {
       "no-extra-semi": 1,

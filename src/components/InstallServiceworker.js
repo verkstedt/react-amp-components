@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 
 import pick from '../utils/pick'
 import mapKeys from '../utils/mapKeys'
-import commonPropTypes from './commonPropTypes'
 
 class InstallServiceWorker extends Component {
   static propTypes = {

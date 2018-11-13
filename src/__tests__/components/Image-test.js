@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Image from '../../components/Image'
-import { renderComponent, renderToStaticMarkup } from '../test-utils'
+import { renderComponent } from '../test-utils'
 
 describe('Image', () => {
   it('matches the snapshot', () => {

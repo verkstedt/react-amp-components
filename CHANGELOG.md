@@ -1,3 +1,10 @@
+## [0.8.3](https://github.com/verkstedt/react-amp-components/compare/v0.8.2...v0.8.3) (2019-02-12)
+
+
+### Bug Fixes
+
+* **publish:** trigger publish ([10e11bf](https://github.com/verkstedt/react-amp-components/commit/10e11bf))
+
 ## [0.8.2](https://github.com/verkstedt/react-amp-components/compare/v0.8.1...v0.8.2) (2019-02-12)
 
 

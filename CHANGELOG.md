@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/verkstedt/react-amp-components/compare/v0.8.0...v0.8.1) (2019-02-12)
+
+
+### Bug Fixes
+
+* install service worker async ([#33](https://github.com/verkstedt/react-amp-components/issues/33)) ([d2f777d](https://github.com/verkstedt/react-amp-components/commit/d2f777d))
+
 # [0.8.0](https://github.com/verkstedt/react-amp-components/compare/v0.7.1...v0.8.0) (2018-11-13)
 
 

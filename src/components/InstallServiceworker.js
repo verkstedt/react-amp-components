@@ -32,7 +32,7 @@ class InstallServiceWorker extends Component {
     return (
       <Fragment>
         <Helmet key="helmet">
-          <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js" />
+          <script async="" custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js" />
         </Helmet>
         <amp-install-serviceworker
           key="install-serviceworker"

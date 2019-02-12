@@ -134,4 +134,3 @@ Props:
 - [ ] Define all the AMP components with their properties and scripts in a JSON file and use that to generate them.
 - [ ] Rename `Layout` to `Helmet`
 - [ ] Provide helper `finalHTML` renderer
-
